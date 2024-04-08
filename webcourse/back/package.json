@@ -1,0 +1,14 @@
+{
+  "name": "webcourse",
+  "version": "1.0.0",
+  "description": "Fist project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arturo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
