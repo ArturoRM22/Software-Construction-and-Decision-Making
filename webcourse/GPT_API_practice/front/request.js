@@ -1,6 +1,6 @@
 document.getElementById("submit").addEventListener("click", () => {
     let prompt = document.getElementById("req").value;
-    fetch('http://localhost:3000/gpt', {
+    fetch('http://localhost:4000/gpt', {
         method: 'POST',
         headers:{
             'Content-Type': "application/json",
@@ -12,7 +12,7 @@ document.getElementById("submit").addEventListener("click", () => {
         // Create a new div element to hold the response
         let responseDiv = document.createElement('div');
         responseDiv.className = 'response-item';
-        responseDiv.innerHTML = data.response_gpt;
+        responseDiv.innerHTML = data.response_gpt.completionContent;
         
         // Get the response container element
         let responseContainer = document.getElementById('response-container');
@@ -24,5 +24,6 @@ document.getElementById("submit").addEventListener("click", () => {
         
         // Reset input value after receiving response
         document.getElementById('req').value = ''; // Reset input value
+        console.log(data.response_gpt.messages);
     });
 });
