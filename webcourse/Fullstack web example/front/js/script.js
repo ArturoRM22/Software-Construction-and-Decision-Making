@@ -10,7 +10,7 @@ document.getElementById('incrementCounterButton').addEventListener('click',funct
 
 //Form function to send a message to the API server
 
-document.getElementById('nameForm').addEventListener('submit',function(event){
+document.getElementById('nameForm').addEventListener('submit',function(event){  
     event.preventDefault();
     const name = document.getElementById('name').value;
     console.log(name);
