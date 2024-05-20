@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'Zilla Slab bold';
+    src: url('../Fonts/Zilla_Slab/ZillaSlab-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Zilla Slab regular';
+    src: url('../Fonts/Zilla_Slab/ZillaSlab-Regular.ttf') format('truetype');
+}
+/* Navbar */
+nav{
+    font-family: Inter, X-LocaleSpecific, sans-serif;
+    border-bottom: 1px solid #ccc; 
+}
+
+#download-btn{
+    padding: 4px 24px;
+}
+
+/* Navbar */
+
+/* First content */
+
+#first-content{
+    margin: 5% 20%;
+}
+
+#first-content-h1{
+    font-family: "Zilla Slab bold";
+}
+
+#first-content-p{
+    font-family: "Zilla Slab regular";
+}
+/* First content */
+
+/* Second content */
+
+.second-content{
+    font-family:Inter, X-LocaleSpecific, sans-serif;
+    background-image: linear-gradient(90deg, #e8e7f2, #e5e9f5, #e2ebf7, #deedf8, #dbeff8, #daf0f7, #daf2f5, #daf3f3, #dcf4f1, #dff5ef, #e2f5ee, #e5f6ec);
+}
+
+#fist-blockquote{
+    text-align:center;
+    padding: 3% 10%
+}
+
+/* Second content */
+
+/* Mozilla apps list */
+
+#app-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin: 64px 0px 0px
+}
+
+.li-content {
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+    font-family: Inter, X-LocaleSpecific, sans-serif;
+    font-size: smaller;
+    justify-content:space-between;
+    margin:10px 30px;
+    text-align:center
+}
+
+.li-content img {
+    margin-bottom: 30px; /* Add some spacing below the image */
+}
+
+.li-content h3 {
+    margin-bottom: 30px; /* Add some spacing below the heading */
+}
+
+.li-content button {
+    margin-top: 30px; /* Add some spacing above the button */
+}
+
+
+#title-section {
+    font-family: "Zilla Slab bold";
+}
+
+section{
+    grid-area: auto;
+    padding:96px 80px;
+}
+
+/* Mozilla apps list */
+
+/* Third content */
+
+#second-blockquote{
+    text-align:center;
+    padding: 3% 17%
+}
+
+/* Third content */
+
+#second-section-1{
+    margin-top: -70px;
+    padding: 15px;
+}
+
+#second-section-2{
+    padding: 15px;
+}
+
+.container-fluid img{
+    padding: 10px;
+}
+
+.container-fluid h2{
+    font-family: "Zilla Slab bold";
+}
+
+.container-fluid p{
+    font-family: Inter, X-LocaleSpecific, sans-serif;
+}
+
+#second-section-div{
+  align-content: center;
+}
+.col-md-6 img{
+    padding-top: 10px;
+}
+
+/* Third content */
+
+/* Fourth content */
+
+.vpn-section{
+    background-color: #e7dfff;
+    align-items: center;
+    border-radius: 8px;
+    padding: 30px 48px;
+    text-align: center;
+}
+
+.vpn-section small{
+    font-family: Inter, X-LocaleSpecific, sans-serif;
+    color: #7542e5;
+}
+
+.vpn-section h2{
+    font-family: "Zilla Slab bold";
+}
+
+.vpn-section img{
+    padding-right: 20px;
+}
+
+aside{
+    background-color: white;
+}
+
+/* Mozilla text section */
+
+.text-section{
+    background-color: #f0f0f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items horizontally */
+}
+
+.text-section h2{
+    font-family: "Zilla Slab bold";
+    padding: 5px;
+}
+
+.text-section p{
+    font-family: Inter, X-LocaleSpecific, sans-serif;
+}
+
+.text-section .dino{
+    bottom: -6px;
+    width: 100px;
+}
+
+
+/* Mozilla text section */
+
+/* Mozilla news */
+
+.row{
+    align-items:center;
+    text-align: center;
+    margin:0px 106.4px;
+    padding:48px 64px
+}
+
+.row p{
+    font-family: Inter, X-LocaleSpecific, sans-serif;
+    text-align: left;
+}
+
+.row label{
+    font-family: Inter, X-LocaleSpecific, sans-serif;
+    text-align: left;
+    padding: 5px;
+}
+
+.row input{
+    font-family: Inter, X-LocaleSpecific, sans-serif;
+    padding: 5px;
+    margin: 20px;
+}
+
+.row h2{
+    font-family: "Zilla Slab bold";
+}
+
+.row fieldset {
+    display:flex;
+    flex-direction: column;
+}
+
+/* Mozilla footer */
+
+.mozilla-footer{
+    background-color: black;
+    color: white;
+}
+
+.mozilla-footer li{
+    list-style: none;
+
+}
+
+#mozilla-logo{
+    width: 80px;
+    padding-top: 40px;
+}
+
+.social-media-img{
+    padding: 25px;
+}
+
+#bottom-footer li{
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
