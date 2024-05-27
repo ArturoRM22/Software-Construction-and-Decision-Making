@@ -3,11 +3,34 @@
         <div class="col-md-4 mx-auto">
             <div class="card text-center my-3">
                 <div class="card-body">
-                    <h3>En Home</b></h3>
+                    <h3>En Homeeee</b></h3>
                 </div>
             </div>  
         </div>
-      </div>
+        <div class="row">
+            {{#if error}}
+                <p>Error: {{erro}}</p>
+            {{/if}}
+
+            {{!-- Syntax to iterate through the data received from the index.js get --}}
+            {{#each data}}
+                <div class="col-md-4">
+                    <div class="card mb-4"> {{!-- "The each helper in Handlebars iterates over the elements of the array. Within the block of the each helper, this refers to the current element being iterated over." --}}
+                        <img src="{{this.image}}" class="card-img-top" alt="{{name}}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{name}}</h5>
+                            <p class="card-text">Status: {{status}}</p>
+                            <p class="card-text">Species: {{species}}</p>
+                            <p class="card-text">Gender: {{gender}}</p>
+                            <p class="card-text">Origin: {{origin.name}}</p>
+                            <a href="{{url}}" class="btn btn-primary">GO!</a>
+                        </div>
+
+                    </div>
+                </div>
+            {{/each}}
+
+        </div>
 
     </div>
 </div>

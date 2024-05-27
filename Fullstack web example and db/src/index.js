@@ -4,6 +4,8 @@ const exphbs = require('express-handlebars');
 const { database } = require('./keys');
 const session = require('express-session');
 const MySQLStore = require("express-mysql-session");
+const flash = require("connect-flash");
+const morgan = require("morgan");
 
 // Initializations
 const app = express();
@@ -32,8 +34,26 @@ app.use(session({
     store: new MySQLStore(database)
 }))
 
+app.use(flash());
+app.use(morgan("dev"));
+app.use(express.urlencoded({extended: false}));
+app.use(express.json());
+
+//Global variables
+app.use((req, res, next) =>{
+    //logica:
+    
+    app.locals.success = req.flash('success');
+    app.locals.message = req.flash('message');
+    app.locals.user = req.user
+    //exito?
+    next();
+})
+
+
 // Routes
 app.use(require("./routes"));
+app.use(require("./routes/authentication"))
 
 // Public
 app.use(express.static(path.join(__dirname, 'public')));
